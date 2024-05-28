@@ -1,0 +1,40 @@
+@keyframes wave-animation1 {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes wave-animation2 {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(50%); }
+}
+
+@keyframes wave-animation3 {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-25%); }
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+}
+
+.wave1 {
+    fill: lightblue;
+    opacity: 0.6;
+    animation: wave-animation1 8s infinite linear;
+}
+
+.wave2 {
+    fill: lightblue;
+    opacity: 0.8;
+    animation: wave-animation2 10s infinite linear;
+}
+
+.wave3 {
+    fill: lightblue;
+    opacity: 1;
+    animation: wave-animation3 12s infinite linear;
+}
